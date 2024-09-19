@@ -1,0 +1,13 @@
+image: edenfarm/go:latest
+
+before_script:
+  - go version
+  - mkdir $GOPATH/src/git.edenfarm.id
+  - mkdir $GOPATH/src/github.com/timothyrichard
+  - WD="$GOPATH/src/github.com/timothyrichard/common"
+
+test:
+  script:
+    - "cp -R $(pwd) $WD && cd $WD"
+    - glide install
+    - gotest
