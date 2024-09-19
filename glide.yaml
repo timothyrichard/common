@@ -4,5 +4,5 @@ import:
 - package: github.com/labstack/echo
 - package: github.com/stretchr/testify
 - package: github.com/mgutz/ansi
-- package: github.com/Sirupsen/logrus
+- package: github.com/sirupsen/logrus
   version: ~1.0.3
